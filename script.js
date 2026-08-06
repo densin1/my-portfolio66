@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
     item.innerHTML = `
       ${p.popular ? '<div class="pricing-card__badge">Популярне</div>' : ''}
       <h3 class="pricing-card__name">${p.name}</h3>
-      <div class="pricing-card__price">Вартість обговорюємо індивідуально</div>
+      <div class="pricing-card__price">${p.price}</div>
       <ul class="pricing-card__features">
         ${p.features.map(f => `<li>${f}</li>`).join('')}
       </ul>
